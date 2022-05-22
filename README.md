@@ -80,6 +80,27 @@ Enter this command to fix error: Failed to connect to bus: Host is down
 sudo nsenter -t $(pidof systemd) -m -p su - $LOGNAME
 ```
 
+### Systemd
+
+Daemon = system service
+
+"services that run in the background"
+
+Linux services naming convention (ends with 'd')
+
+- httpd
+- smbd
+- sshd
+- dhcpd
+
+In some systems services were started one at a time using **/etc/init.d**, which would be the first process to run
+
+Command used to manage system units: [systemctl](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-system-services-with-systemctl_configuring-basic-system-settings)
+
+```
+systemctl
+```
+
 
 ## MAC installation 
 
